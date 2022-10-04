@@ -1,0 +1,154 @@
+main {
+    
+    background:rgb(244, 244, 159);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:35px;
+}
+
+section {
+    margin: 25px 0;
+}
+
+/*----------NAVBAR----------*/
+
+.navbar {
+    padding:20px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: yellow;
+    border:1px solid black;
+}
+#linkUser{
+    margin-left:100px;
+}
+#linkCarrito {
+    margin-right: 100px;
+}
+/*--------------------------*/
+/*-------HEADER banner------*/
+.banner {
+    position: relative;
+    text-align: center;
+}
+.titulo {
+    position:absolute;
+    top:150px;
+    z-index: 100;
+    text-align: center;
+    margin:0 auto;
+}
+.titulo h1 {
+    font-size: 5rem;
+    color:black;
+    text-shadow: red 2px 5px;
+}
+.titulo h3 {
+    font-size: 2rem;
+    color:black;
+    text-shadow: yellow 2px 5px;
+}
+
+/*--------------------------*/
+/*-------MEDIOS de pago------*/
+#medios{
+    background:rgb(220, 213, 213);
+    padding:20px;
+    height:max-content;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.medios-de-pago {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.tipo-de-pago {
+    flex:wrap;
+    text-align: center;
+    margin:25px
+
+}
+
+.payment-data .container {
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    display:wrap;
+}
+
+
+/*--------------------------*/
+/*--------CATEGORIAS--------*/
+
+#categorias {
+    background: yellow;
+    padding: 50px;
+    text-align: center;
+    border:2px solid green;
+    border-radius: 20px;
+}
+#categorias h2 {
+    margin-top:60px;
+    margin-bottom:25px;
+}
+.card a img {
+    max-height: 200px;
+}
+
+
+/*--------------------------*/
+/*----------OFERTAS---------*/
+
+#ofertas {
+    background:orange;
+    text-align: center;
+    padding: 50px;
+    border:2px solid red;
+    border-radius:20px;
+}
+#ofertas h2 {
+    margin-top:60px;
+    margin-bottom:25px;
+} 
+
+/*--------------------------*/
+/*---------NOVEDADES--------*/
+
+#novedades {
+    background: pink;
+    text-align: center;
+    height:500px;
+    padding:50px;
+    border:2px solid green;
+    border-radius:20px
+}
+#novedades h2 {
+    margin-top:60px;
+    margin-bottom:25px;
+}
+
+
+/*--------------------------*/
+/*----------FOOTER----------*/
+
+#footer {
+    height:300px;
+    background:brown;
+    text-align: center;
+    padding:50px
+}
+
+.navRigth {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+/*--------------------------*/
+/*-------Media Queries------*/

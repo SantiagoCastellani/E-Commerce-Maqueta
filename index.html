@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta E-Commerce</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+</head>
+<body>
+  <!-----NAVBAR----->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-Commerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#categorias">Categorias</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./categoria.html">Libros</a></li>                  
+              <li><a class="dropdown-item" href="./categoria.html">Arte</a></li>
+              <li><a class="dropdown-item" href="./categoria.html">Tecnología</a></li>
+              <li><a class="dropdown-item" href="./categoria.html">Salud</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ofertas">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#novedades">Novedades</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item  navRigth">
+            <a id="linkUser" class="nav-link" href="./login.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li class="nav-item  navRigth">
+            <a id="linkCarrito" class="nav-link" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+    <!---------------------->
+    <!----HEADER banner----->
+
+    <header class="banner">
+      <div class="contenedor">
+        <div class="container titulo">
+          <h1>E-Commerce</h1>
+          <h3>Lo que necesites, aqui esta</h3>
+        </div>
+        <div class="andaribel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/artesanias2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/icompu.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/libro.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!---------------------->
+    <!----MAIN----->        
+    <main>
+
+    <!----------------------->
+    <!-----MEDIOS de pago---->
+
+      <section id="medios" class="seccion">
+        <div>
+          <div class="payment-data-container">
+            <h2 class="clipped">Medios de pago</h2>
+            <div class="medios-de-pago payment-data-group payment-data-group-normal">
+              <div class="tipo-de-pago payment-data-section payment-data-section-normal">
+                <a class="payment-data-icon" href="/gz/promociones-bancos" data-title="Promociones bancarias">
+                  <img decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/credit-card.svg" alt="Tarjeta de crédito">
+                </a>
+                <div class="payment-data-title">Tarjeta de crédito</div>
+                <div class="payment-data-subtitle">
+                  <a href="/gz/promociones-bancos" modal_title="Promociones bancarias" data-title="Promociones bancarias" aria-label="Tarjeta de crédito, Ver promociones bancarias">Ver promociones bancarias</a>
+                </div>
+              </div>    
+              <div class="tipo-de-pago payment-data-section payment-data-section-normal">
+                <a class="payment-data-icon" href="/gz/home/payments/methods#debit-card" data-title="Medios de pago">
+                  <img decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/debit-card.svg" alt="Tarjeta de débito">
+                </a>
+                <div class="payment-data-title">Tarjeta de débito</div>
+                <div class="payment-data-subtitle">
+                  <a href="/gz/home/payments/methods#debit-card" modal_title="Medios de pago" data-title="Medios de pago" aria-label="Tarjeta de débito, Ver más">Ver más</a>
+                </div>
+              </div>
+              <div class="tipo-de-pago payment-data-section payment-data-section-normal">
+                <a class="payment-data-icon" href="https://mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/?sk=RHRsnBTf" target="_blank" data-title="Medios de pago">
+                  <img decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/mercado-creditsv2.svg" alt="Cuotas sin tarjeta">
+                </a>
+                <div class="payment-data-title">Cuotas sin tarjeta</div>
+                <div class="payment-data-subtitle">
+                  <a href="https://mercadolibre.com.ar/mercado-credito/cuotas-sin-tarjeta/?sk=RHRsnBTf" target="_blank" modal_title="Medios de pago" data-title="Medios de pago">Conocé Mercado Crédito</a>
+                </div>
+              </div>
+              <div class="tipo-de-pago payment-data-section payment-data-section-normal">
+                <a class="payment-data-icon" href="/gz/home/payments/methods#payment-agreement" data-title="Medios de pago">
+                  <img decoding="async" src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/payment-agreement.svg" alt="Efectivo">
+                </a>
+                <div class="payment-data-title">Efectivo</div>
+                <div class="payment-data-subtitle">
+                  <a href="/gz/home/payments/methods#payment-agreement" modal_title="Medios de pago" data-title="Medios de pago" aria-label="Efectivo, Ver más">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>       
+      </section>
+    
+    <!----------------------->
+    <!-------CATEGORIAS------>
+
+      <section id="categorias">
+        <h2>Categorias</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <a href="./categoria.html"><img src="./img/libros.jpg" class="card-img-top" alt="..."></a>              
+              <div class="card-body">
+                <h5 class="card-title">Libros</h5>
+                <p class="card-text">La lectura es un buen hábito, visita nuestro catálogo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="./categoria.html"><img src="./img/artesanias.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Arte</h5>
+                <p class="card-text">Visita nuestra tienda  de arte y artesanias.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="./categoria.html"><img src="./img/tecnologia.jpg" class="card-img-top" alt="..."></a>
+              
+              <div class="card-body">
+                <h5 class="card-title">Tecnología</h5>
+                <p class="card-text">Aqui encontraras el dispositivo ideal para ti.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!----------------------->
+    <!--------OFERTAS-------->
+
+      <section id="ofertas" class="seccion">
+        <h2>Ofertas</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="./img/libros.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/alimentos.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./img/tecnologia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!------------------------->
+    <!--------NOVEDADES-------->
+
+      <section id="novedades">
+        <h2>Novedades o alguna otra cosa</h2>
+      </section>
+
+    </main>
+
+    <!---------------------->
+    <!--------FOOTER-------->
+    <footer id="footer">
+      <h3>Aqui un footer donde figura diferente tipo de información</h3>
+    </footer>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/9a58d3bc5f.js" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+    
+    
+</body>
+</html>
