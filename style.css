@@ -140,9 +140,11 @@ section {
 
 #footer {
     height:300px;
-    background:brown;
+    background:black;
     text-align: center;
-    padding:50px
+    padding:50px;
+    color:lightblue;
+    border:1px solid yellow;
 }
 
 .navRigth {

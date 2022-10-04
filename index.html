@@ -11,6 +11,35 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
 </head>
 <body>
+
+<!-- Modal del carrito---->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="exampleModalLabel">Compras realizadas</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3>Maquina de escribir</h3>
+        <p>Cantidad:1 Precio:$6300</p>
+        <button>Cancelar</button>
+        <h3>La Divina Comedia</h3>
+        <p>Cantidad:1 Precio:$2890</p>
+        <button>Cancelar</button>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descartar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!---- Fin Modal del carrito---->
+
+
+
+
   <!-----NAVBAR----->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
@@ -52,7 +81,7 @@
             <a id="linkUser" class="nav-link" href="./login.html"><i class="fa-regular fa-user"></i></a>
           </li>
           <li class="nav-item  navRigth">
-            <a id="linkCarrito" class="nav-link" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a id="linkCarrito" class="nav-link" href="./carrito.html" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
         </ul>
 
